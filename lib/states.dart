@@ -37,47 +37,45 @@ const List<Map<String, dynamic>> US_STATES = [
                                 "children": [
                                   {
                                     "label": "California",
-                                    "key": "CA11110",
+                                    "key": "CA111110",
                                     "children": [
-                                      {"label": "California", "key": "CA1111"},
-                                      {"label": "Colorado", "key": "CO1111"},
-                                      {"label": "Connecticut", "key": "CT1111"},
+                                      {
+                                        "label": "California",
+                                        "key": "CA1111s1"
+                                      },
+                                      {"label": "Colorado", "key": "CO1111s1"},
+                                      {
+                                        "label": "Connecticut",
+                                        "key": "CT1111s1"
+                                      },
                                     ]
                                   },
-                                  {"label": "Colorado", "key": "CO1111"},
-                                  {"label": "Connecticut", "key": "CT1111"},
                                 ]
                               },
-                              {"label": "Colorado", "key": "CO1111"},
-                              {"label": "Connecticut", "key": "CT1111"},
                             ]
                           },
-                          {"label": "Colorado", "key": "CO111"},
-                          {"label": "Connecticut", "key": "CT111"},
                         ]
                       },
-                      {"label": "Colorado", "key": "CO11"},
-                      {"label": "Connecticut", "key": "CT11"},
                     ]
                   },
-                  {
-                    "label": "Colorado",
-                    "key": "CO20",
-                    "children": [
-                      {"label": "California", "key": "CA12"},
-                      {"label": "Colorado", "key": "CO12"},
-                      {"label": "Connecticut", "key": "CT12"},
-                    ]
-                  },
-                  {
-                    "label": "Connecticut",
-                    "key": "CT30",
-                    "children": [
-                      {"label": "California", "key": "CA13"},
-                      {"label": "Colorado", "key": "CO13"},
-                      {"label": "Connecticut", "key": "CT13"},
-                    ]
-                  },
+                  // {
+                  //   "label": "Colorado",
+                  //   "key": "CO20",
+                  //   "children": [
+                  //     {"label": "California", "key": "CA12"},
+                  //     {"label": "Colorado", "key": "CO12"},
+                  //     {"label": "Connecticut", "key": "CT12"},
+                  //   ]
+                  // },
+                  // {
+                  //   "label": "Connecticut",
+                  //   "key": "CT30",
+                  //   "children": [
+                  //     {"label": "California", "key": "CA13"},
+                  //     {"label": "Colorado", "key": "CO13"},
+                  //     {"label": "Connecticut", "key": "CT13"},
+                  //   ]
+                  // },
                 ]
               },
               // {"label": "Colorado", "key": "CO"},

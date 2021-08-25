@@ -187,84 +187,43 @@ class _TreeNodeState extends State<TreeNode>
           icon,
           // SizedBox(width: 40),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  widget.node.label,
-                  softWrap: widget.node.isParent
-                      ? _theme.parentLabelOverflow == null
-                      : _theme.labelOverflow == null,
-                  overflow: widget.node.isParent
-                      ? _theme.parentLabelOverflow
-                      : _theme.labelOverflow,
-                  style: widget.node.isParent
-                      ? (widget.node.isMiddle)
-                          ? _theme.parentLabelStyle.copyWith(
-                              fontSize: 16,
-                              letterSpacing: 0.1,
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xFF007AC5),
-                            )
-                          : (widget.node.isThird)
-                              ? _theme.parentLabelStyle.copyWith(
-                                  fontSize: 16,
-                                  letterSpacing: 0.1,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xFFA647CA),
-                                )
-                              : _theme.parentLabelStyle.copyWith(
-                                  fontSize: 16,
-                                  letterSpacing: 0.1,
-                                  fontWeight: FontWeight.w800,
-                                  color: Color(0XFFE98B3B),
-                                )
-                      : _theme.labelStyle.copyWith(
-                          fontSize: 16,
-                          letterSpacing: 0.3,
+            child: Text(
+              widget.node.label,
+              softWrap: widget.node.isParent
+                  ? _theme.parentLabelOverflow == null
+                  : _theme.labelOverflow == null,
+              overflow: widget.node.isParent
+                  ? _theme.parentLabelOverflow
+                  : _theme.labelOverflow,
+              style: widget.node.isParent
+                  ? (widget.node.isMiddle)
+                      ? _theme.parentLabelStyle.copyWith(
+                          fontSize: 14,
+                          letterSpacing: 0.1,
                           fontWeight: FontWeight.w600,
-                          color: Color(0XFF4FA216),
-                          // color: isSelected ? _theme.colorScheme.onPrimary : null,
-                        ),
-                ),
-                Text(
-                  'English name placeholder',
-                  softWrap: widget.node.isParent
-                      ? _theme.parentLabelOverflow == null
-                      : _theme.labelOverflow == null,
-                  overflow: widget.node.isParent
-                      ? _theme.parentLabelOverflow
-                      : _theme.labelOverflow,
-                  style: widget.node.isParent
-                      ? (widget.node.isMiddle)
+                          color: Color(0xFF007AC5),
+                        )
+                      : (widget.node.isThird)
                           ? _theme.parentLabelStyle.copyWith(
                               fontSize: 14,
                               letterSpacing: 0.1,
-                              fontWeight: FontWeight.w400,
-                              color: Color(0xFF007AC5),
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFFA647CA),
                             )
-                          : (widget.node.isThird)
-                              ? _theme.parentLabelStyle.copyWith(
-                                  fontSize: 14,
-                                  letterSpacing: 0.1,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xFFA647CA),
-                                )
-                              : _theme.parentLabelStyle.copyWith(
-                                  fontSize: 14,
-                                  letterSpacing: 0.1,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0XFFE98B3B),
-                                )
-                      : _theme.labelStyle.copyWith(
-                          fontSize: 14,
-                          letterSpacing: 0.1,
-                          fontWeight: FontWeight.w400,
-                          color: Color(0XFF4FA216),
-                          // color: isSelected ? _theme.colorScheme.onPrimary : null,
-                        ),
-                ),
-              ],
+                          : _theme.parentLabelStyle.copyWith(
+                              fontSize: 14,
+                              letterSpacing: 0.1,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0XFFE98B3B),
+                            )
+                  : _theme.labelStyle.copyWith(
+                      // fontFamily: 'Poppins',
+                      fontSize: 14,
+                      letterSpacing: 0.1,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0XFF4FA216),
+                      // color: isSelected ? _theme.colorScheme.onPrimary : null,
+                    ),
             ),
           ),
         ],

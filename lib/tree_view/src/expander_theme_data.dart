@@ -76,7 +76,7 @@ class ExpanderThemeData {
         type = ExpanderType.plusMinus,
         modifier = ExpanderModifier.circleOutlined,
         animated = true,
-        size = 20;
+        size = 16;
 
   /// Creates a copy of this theme but with the given fields replaced with
   /// the new values.
